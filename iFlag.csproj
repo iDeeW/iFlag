@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6868FB29-7A19-4D25-93D5-3E6C6DBC3B49}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>iFlag</RootNamespace>
+    <AssemblyName>IRIF</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishSingleFile>true</PublishSingleFile>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>0</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\software\iFlag\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\icon21.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>54EB8A902271BDE51BF39EA64CE91744A2DFCCBF</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>iFlag_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="iRSDKSharp, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>iRSDKSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="communication.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="sdk.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="session.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dispatcher.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="flags.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="overlays.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="car.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="patterns.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="matrix.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updater.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="mainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="iFlag_TemporaryKey.pfx" />
+    <None Include="misc\docs\Colors.md" />
+    <None Include="misc\docs\HowToHelp.md" />
+    <None Include="misc\docs\Patterns.md" />
+    <None Include="misc\docs\Power.md" />
+    <None Include="misc\docs\README.md" />
+    <None Include="misc\docs\SerialProtocol.md" />
+    <None Include="misc\docs\Signals.md" />
+    <None Include="misc\flag.xlsx" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\irif.hex" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gui.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon21.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="misc\docs\patterns\checkered.gif" />
+    <Content Include="misc\docs\patterns\circle.gif" />
+    <Content Include="misc\docs\patterns\corners.gif" />
+    <Content Include="misc\docs\patterns\crossed.gif" />
+    <Content Include="misc\docs\patterns\diagonal-stripe.gif" />
+    <Content Include="misc\docs\patterns\double-waving.gif" />
+    <Content Include="misc\docs\patterns\enough.gif" />
+    <Content Include="misc\docs\patterns\f.gif" />
+    <Content Include="misc\docs\patterns\flashing.gif" />
+    <Content Include="misc\docs\patterns\furled.gif" />
+    <Content Include="misc\docs\patterns\half.gif" />
+    <Content Include="misc\docs\patterns\inverted.gif" />
+    <Content Include="misc\docs\patterns\iracing.gif" />
+    <Content Include="misc\docs\patterns\meatball.gif" />
+    <Content Include="misc\docs\patterns\sc.gif" />
+    <Content Include="misc\docs\patterns\simple.gif" />
+    <Content Include="misc\docs\patterns\square.gif" />
+    <Content Include="misc\docs\patterns\status.gif" />
+    <Content Include="misc\docs\patterns\stripped.gif" />
+    <Content Include="misc\docs\patterns\too-high.gif" />
+    <Content Include="misc\docs\patterns\too-low.gif" />
+    <Content Include="misc\docs\patterns\warn-left-right.gif" />
+    <Content Include="misc\docs\patterns\warn-left.gif" />
+    <Content Include="misc\docs\patterns\warn-right.gif" />
+    <Content Include="misc\docs\patterns\waving.gif" />
+    <Content Include="misc\docs\patterns\wrench.gif" />
+    <Content Include="misc\docs\signals\black.gif" />
+    <Content Include="misc\docs\signals\blue.gif" />
+    <Content Include="misc\docs\signals\caution.gif" />
+    <Content Include="misc\docs\signals\checkered.gif" />
+    <Content Include="misc\docs\signals\closed-pits.gif" />
+    <Content Include="misc\docs\signals\crossed.gif" />
+    <Content Include="misc\docs\signals\debris.gif" />
+    <Content Include="misc\docs\signals\entering-closed-pits.gif" />
+    <Content Include="misc\docs\signals\f.gif" />
+    <Content Include="misc\docs\signals\furled-black.gif" />
+    <Content Include="misc\docs\signals\green.gif" />
+    <Content Include="misc\docs\signals\half-red.gif" />
+    <Content Include="misc\docs\signals\incident-big.gif" />
+    <Content Include="misc\docs\signals\incident-exploded.gif" />
+    <Content Include="misc\docs\signals\incident-small.gif" />
+    <Content Include="misc\docs\signals\inverted-green.gif" />
+    <Content Include="misc\docs\signals\iracing.gif" />
+    <Content Include="misc\docs\signals\meatball.gif" />
+    <Content Include="misc\docs\signals\one-to-green.gif" />
+    <Content Include="misc\docs\signals\pit-speed-enough.gif" />
+    <Content Include="misc\docs\signals\pit-speed-high.gif" />
+    <Content Include="misc\docs\signals\pit-speed-low.gif" />
+    <Content Include="misc\docs\signals\pit-speed-too-high.gif" />
+    <Content Include="misc\docs\signals\pit-speed-too-low.gif" />
+    <Content Include="misc\docs\signals\pits-go.gif" />
+    <Content Include="misc\docs\signals\pits-gogogo.gif" />
+    <Content Include="misc\docs\signals\pits-hold.gif" />
+    <Content Include="misc\docs\signals\pits-speedlimit.gif" />
+    <Content Include="misc\docs\signals\red.gif" />
+    <Content Include="misc\docs\signals\repairs-done.gif" />
+    <Content Include="misc\docs\signals\repairs-mandatory.gif" />
+    <Content Include="misc\docs\signals\repairs-optional.gif" />
+    <Content Include="misc\docs\signals\sc.gif" />
+    <Content Include="misc\docs\signals\start-ready.gif" />
+    <Content Include="misc\docs\signals\start-set.gif" />
+    <Content Include="misc\docs\signals\warn-left-right.gif" />
+    <Content Include="misc\docs\signals\warn-left.gif" />
+    <Content Include="misc\docs\signals\warn-right.gif" />
+    <Content Include="misc\docs\signals\white.gif" />
+    <Content Include="misc\docs\signals\yellow.gif" />
+    <Content Include="misc\GUI image.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
