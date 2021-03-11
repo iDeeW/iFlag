@@ -141,5 +141,23 @@ namespace iFlag
             clearFlag = irsdk_green;
             return flag(flagName, pattern, color, speed);
         }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // mainForm
+            // 
+            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Name = "mainForm";
+            this.Load += new System.EventHandler(this.mainForm_Load);
+            this.ResumeLayout(false);
+
+        }
+
+        private void mainForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
