@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="iFlag.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <userSettings>
+        <iFlag.Properties.Settings>
+            <setting name="WindowLocation" serializeAs="String">
+                <value>0, 0</value>
+            </setting>
+            <setting name="WindowState" serializeAs="String">
+                <value>Normal</value>
+            </setting>
+            <setting name="WindowTopMost" serializeAs="String">
+                <value>True</value>
+            </setting>
+            <setting name="SerialPort" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="UsbConnector" serializeAs="String">
+                <value>0</value>
+            </setting>
+            <setting name="DemoMode" serializeAs="String">
+                <value>True</value>
+            </setting>
+            <setting name="ShowSpotterOverlay" serializeAs="String">
+                <value>True</value>
+            </setting>
+            <setting name="ShowStartLights" serializeAs="String">
+                <value>True</value>
+            </setting>
+            <setting name="MatrixLuma" serializeAs="String">
+                <value>100</value>
+            </setting>
+            <setting name="Updates" serializeAs="String">
+                <value>stable</value>
+            </setting>
+            <setting name="AllowMultiple" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="ShowIncidentOverlay" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="ShowPitExitBlue" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="ShowClosedPitsOverlay" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="ShowRepairsOverlay" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="ShowPitSpeedLimit" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="PitSpeedMap" serializeAs="String">
+                <value>safe</value>
+            </setting>
+            <setting name="IncidentStyleMap" serializeAs="String">
+                <value>exploded</value>
+            </setting>
+        </iFlag.Properties.Settings>
+    </userSettings>
+</configuration>
