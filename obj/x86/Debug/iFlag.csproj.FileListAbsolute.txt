@@ -31,3 +31,4 @@ C:\Users\iweerasinghe\Documents\Projects\Freelance Projects\Fiverr Projects\Ongo
 C:\Users\iweerasinghe\Documents\Projects\Freelance Projects\Fiverr Projects\Ongoing Projects\iFlag\VC#SouceCode\source\software\iFlag\obj\x86\Debug\irif.exe.manifest
 C:\Users\iweerasinghe\Documents\Projects\Freelance Projects\Fiverr Projects\Ongoing Projects\iFlag\VC#SouceCode\source\software\iFlag\obj\x86\Debug\irif.application
 C:\Users\iweerasinghe\Documents\Projects\Freelance Projects\Fiverr Projects\Ongoing Projects\iFlag\VC#SouceCode\source\software\iFlag\obj\x86\Debug\iFlag.csprojAssemblyReference.cache
+C:\Users\iweerasinghe\Documents\Projects\Github\iFlag\bin\Debug\IRIF.exe.config
